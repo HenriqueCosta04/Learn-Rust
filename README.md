@@ -8,10 +8,10 @@ This roadmap is an opinionated guide to learning Rust, created and designed by m
 
 ### Core Chapters
 
-- [1. Getting Started](https://rust-book.cs.brown.edu/ch01-00-getting-started.html)
-  - [1.1. Installation](https://rust-book.cs.brown.edu/ch01-01-installation.html)
-  - [1.2. Hello, World!](https://rust-book.cs.brown.edu/ch01-02-hello-world.html)
-  - [1.3. Hello, Cargo!](https://rust-book.cs.brown.edu/ch01-03-hello-cargo.html)
+- [1. Getting Started](./01_Fundamentals/ch_01/README.md)
+  - [1.1. Installation](./01_Fundamentals/ch_01/README.md#installing-rust)
+  - [1.2. Hello, World!](./01_Fundamentals/ch_01/README.md#the-anatomy-of-a-rust-program)
+  - [1.3. Hello, Cargo!](./01_Fundamentals/ch_01/README.md#using-cargo)
 
 - [2. Programming a Guessing Game](https://rust-book.cs.brown.edu/ch02-00-guessing-game-tutorial.html)
 
