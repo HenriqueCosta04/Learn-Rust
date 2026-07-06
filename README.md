@@ -13,7 +13,7 @@ This roadmap is an opinionated guide to learning Rust, created and designed by m
   - [1.2. Hello, World!](./01_Fundamentals/ch_01/README.md#the-anatomy-of-a-rust-program)
   - [1.3. Hello, Cargo!](./01_Fundamentals/ch_01/README.md#using-cargo)
 
-- [2. Programming a Guessing Game](https://rust-book.cs.brown.edu/ch02-00-guessing-game-tutorial.html)
+- [2. Programming a Guessing Game](./01_Fundamentals/ch_02/README.md)
 
 - [3. Common Programming Concepts](https://rust-book.cs.brown.edu/ch03-00-common-programming-concepts.html)
   - [3.1. Variables and Mutability](https://rust-book.cs.brown.edu/ch03-01-variables-and-mutability.html)
