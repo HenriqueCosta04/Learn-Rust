@@ -169,7 +169,7 @@ Unlike tuples, every element of an array must have the same type. Arrays in Rust
 If we try to access an element of an array using an index that is outside the bounds of the array, Rust will panic and terminate the program. This is a safety feature that prevents undefined behavior and helps catch bugs early in the development process.
 
 
-## Data Types Summary
+### Data Types Summary
 
 Below is a summary of the data types we have covered in this chapter:
 
@@ -184,3 +184,78 @@ Below is a summary of the data types we have covered in this chapter:
 | Tuple | Groups multiple values of different types | `(i32, &str, f64)`, `(bool, char)` |
 | Array | Groups multiple values of the same type | `[i32; 5]`, `[bool; 3] or [bool, bool, bool]`  |
 | Unit | Represents an empty value | `()` |
+
+
+## Functions 
+
+Rust code uses `snake case` as the conventional style for function and variable names. Its base syntax is defined as below: 
+
+```rust
+fn function_name(parameter_1, parameter_2, parameter_n) {
+    // Function scope.
+}
+```
+
+### Parameters
+
+#### Parameters vs. Arguments
+
+We can define functions to have `parameters`, which are variables that act as placeholders for the values that will be passed to the function when it is called. When we call a function, we provide `arguments`, which are the actual values that are passed to the function's parameters.
+
+```rust
+fn main() {
+    another_function(5);
+}
+
+fn another_function(x: i32) {
+    println!("The value of x is: {x}");
+}
+```
+
+In function signatures, we **must** declare the type of each parameter, as Rust Design Principles require that the compiler knows the types of all variables at compile time. This is part of Rust's strong type system, which helps catch errors early in the development process.
+
+#### Statements and Expressions
+
+Function bodies are made up of a series of `statements` and `expressions`. A statement is an instruction that performs some action but does not return a value, while an expression evaluates to a value. In Rust, most things are expressions, including function calls and blocks.
+
+```rust
+fn main() {
+    let y = {
+        let x = 3;
+        x + 1 // This is an expression that evaluates to 4
+    };
+
+    println!("The value of y is: {y}");
+}
+```
+
+Expressions evaluate to a value and make up most of the rest of the code that you’ll write in Rust. Calling a function is an expression. Calling a macro is an expression. A new scope block created with curly brackets is an expression.
+
+##### Functions with Return values
+
+Functions can return values to the code that calls them. We don’t name return values, but we must declare their type after an arrow (->). In Rust, the return value of the function is synonymous with the value of the final expression in the block of the body of a function. 
+
+```rust
+fn five() -> i32 {
+    5
+}
+
+fn main() {
+    let x = five();
+
+    println!("The value of x is: {x}");
+}
+```
+
+There are no function calls, macros, or even let statements in the five function—just the number 5 by itself. That’s a perfectly valid function in Rust. Note that the function’s return type is specified too, as -> i32. 
+
+### Functions Summary
+
+| Concept | Description | Example |
+|---------|-------------|---------|
+| Function | A named block of code that can be called with arguments and may return a value | `fn function_name(parameter_1, parameter_2) -> return_type { /* function body */ }` |
+| Parameter | A variable that acts as a placeholder for a value passed to a function | `fn another_function(x: i32) { /* function body */ }` |
+| Argument | The actual value passed to a function's parameter when the function is called | `another_function(5);` |
+| Statement | An instruction that performs an action but does not return a value | `let x = 5;` |
+| Expression | A piece of code that evaluates to a value | `let y = { let x = 3; x + 1 };` |
+| Return Value | The value returned by a function to the code that calls it | `fn five() -> i32 { 5 }` |

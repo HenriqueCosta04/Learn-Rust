@@ -15,7 +15,7 @@ This roadmap is an opinionated guide to learning Rust, created and designed by m
 
 - [2. Programming a Guessing Game](./01_Fundamentals/ch_02/README.md)
 
-- [3. Common Programming Concepts](https://rust-book.cs.brown.edu/ch03-00-common-programming-concepts.html)
+- [3. Common Programming Concepts](./01_Fundamentals/ch_03/README.md)
   - [3.1. Variables and Mutability](https://rust-book.cs.brown.edu/ch03-01-variables-and-mutability.html)
   - [3.2. Data Types](https://rust-book.cs.brown.edu/ch03-02-data-types.html)
   - [3.3. Functions](https://rust-book.cs.brown.edu/ch03-03-how-functions-work.html)
